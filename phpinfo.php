@@ -5,4 +5,3 @@
 
 // Escribe en la línea inferior la instrucción phpinfo() y observa lo que sale en pantalla
 
-phpinfo();
