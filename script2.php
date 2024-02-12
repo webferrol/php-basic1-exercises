@@ -22,6 +22,10 @@
 //crea una variable y no la incialices. 
 //Utiliza la función gettype() para ver el tipo de datos
 
+$variable;
+
+echo gettype($variable);
+
 
 
 
