@@ -21,7 +21,26 @@ define('MESES', [
 
 $boolean = false;
 
-
-
+print_r($boolean);
+var_dump($boolean);
 
 // Coge el array de meses creado en el ejercicio anterior y mira las diferencias de cómo se muestra con ambas funciones
+
+$meses = [
+  'Enero',
+  'Febrero',
+  'Marzo',
+  'Abril',
+  'Mayo',
+  'Junio',
+  'Julio',
+  'Agosto',
+  'Septiembre',
+  'Octubre',
+  'Noviembre',
+  'Diciembre'
+];
+
+print_r($meses); 
+echo "<br>";
+var_dump($meses);

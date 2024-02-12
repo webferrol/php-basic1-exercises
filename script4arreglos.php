@@ -14,6 +14,22 @@
   'Noviembre',
   'Diciembre'
 */
+
+
+$meses = [
+  'Enero',
+  'Febrero',
+  'Marzo',
+  'Abril',
+  'Mayo',
+  'Junio',
+  'Julio',
+  'Agosto',
+  'Septiembre',
+  'Octubre',
+  'Noviembre',
+  'Diciembre'
+];
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +42,12 @@
 </head>
 <body>
   <h1>Meses del año</h1>
-  <!-- La lista ordenada va aquí -->
+  <ol>
+    <?php foreach ($meses as $mes) { ?>
+      <li><?php echo $mes; ?></li>
+    <?php } ?>
+  </ol>
+  
   
 </body>
 </html>
