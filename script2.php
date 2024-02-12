@@ -17,6 +17,11 @@
 
 //declara dos variables de tipo texto con tu nombre y apellidos Concatena y observa el resultado por pantalla.
 
+$nombre = "Rodrigo";
+$apellidos = "Sambade Saá";
+
+echo $nombre . $apellidos;
+
 
 
 //crea una variable y no la incialices. 
