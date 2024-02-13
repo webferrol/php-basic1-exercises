@@ -15,62 +15,69 @@ const AGENDA = [  // array multidimensional
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda telefónica</title>
 </head>
+
 <body>
 
-<style>
+    <style>
+        table,
+        th,
+        td {
+            border-style: solid;
+            border-collapse: collapse;
+        }
 
-    table,th,td {
-        border-style: solid;
-        border-collapse: collapse;
-    }
-    th, td {
-        padding: .2rem;
-    }
-    caption {
-        padding: .5rem 0;
-        text-transform: uppercase;
-        color: tomato;
-        font-size: .5rem;
-    }
-    tfoot {
-        text-align: center;
-        font-size: .4rem;
-        font-weight: bold;
-    }
-</style>
+        th,
+        td {
+            padding: .2rem;
+        }
 
-<table>
-    <caption>Agenda de amigos</caption>
-    <tfoot>
+        caption {
+            padding: .5rem 0;
+            text-transform: uppercase;
+            color: tomato;
+            font-size: .5rem;
+        }
+
+        tfoot {
+            text-align: center;
+            font-size: .4rem;
+            font-weight: bold;
+        }
+    </style>
+
+    <table>
+        <caption>Agenda de amigos</caption>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    Número de personas <?= count(AGENDA) ?>
+                </td>
+            </tr>
+        </tfoot>
         <tr>
-            <td colspan="2">
-                Número de personas <?=count(AGENDA)?>
-            </td>
+            <th>Nombre</th>
+            <th>Teléfono</th>
         </tr>
-    </tfoot>
-    <tr>
-        <th>Nombre</th>
-        <th>Teléfono</th>
-    </tr>
 
-    <?php foreach(AGENDA as $amigo):?>
-        <tr>
-            <td>
-                <?=$amigo['nombre']?> 
-            </td>
-            <td>
-            <?=$amigo['telf']?> 
-            </td>
-        </tr>
-    <?php endforeach;?>
+        <?php foreach (AGENDA as $amigo) : ?>
+            <tr>
+                <td>
+                    <?= $amigo['nombre'] ?>
+                </td>
+                <td>
+                    <?= $amigo['telf'] ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
 
 
-</table>
+    </table>
 
 
 
@@ -79,6 +86,7 @@ const AGENDA = [  // array multidimensional
 var_dump(AGENDA);
 ?>
     </pre>
-    
+
 </body>
+
 </html>
